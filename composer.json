@@ -1,0 +1,23 @@
+{
+    "name": "lenovo/pirma-pamoka",
+    "description": "PHP Intro",
+    "type": "project",
+    "require": {
+        "illuminate/pagination": "^5.7"
+    },
+    "require-dev": {
+        "illuminate/database": "^5.7"
+    },
+    "authors": [
+        {
+            "name": "Mantsvas",
+            "email": "37329439+Mantsvas@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Nfq\\": "src"
+        }
+    }
+}
