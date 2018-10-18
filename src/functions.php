@@ -1,45 +1,40 @@
 <?php
 namespace {
-    class HomeWork
+    function calculateHomeWorkSum(...$numbers)
     {
-        public function calculateHomeWorkSum(...$numbers)
-        {
-            $sum = 0;
-            foreach ($numbers as $number) {
-                $sum += $number;
-            }
-            echo  __FUNCTION__.": $sum </br>";
-            return $sum;
+        $sum = 0;
+        foreach ($numbers as $number) {
+            $sum += $number;
         }
+        echo  __FUNCTION__.":". $sum ."</br>";
+        return $sum;
     }
 }
 
 namespace Nfq\Akademija\Not_Typed {
-    class HomeWork
+
+    function calculateHomeWorkSum(...$numbers) :int
     {
-        public function calculateHomeWorkSum(...$numbers) :int
-        {
-            $sum = 0;
-            foreach ($numbers as $number) {
-                $sum += $number;
-            }
-            echo  __NAMESPACE__.'\\'.__FUNCTION__.": $sum </br>";
-            return $sum;
+        $sum = 0;
+        foreach ($numbers as $number) {
+            $sum += $number;
         }
+        echo  __FUNCTION__.":". $sum ."</br>";
+        return $sum;
     }
+
 }
 
 namespace Nfq\Akademija\Soft {
-    class HomeWork
+
+    function calculateHomeWorkSum(int...$numbers) :int
     {
-        public function calculateHomeWorkSum(int...$numbers) :int
-        {
-            $sum = 0;
-            foreach ($numbers as $number) {
-                $sum += $number;
-            }
-            echo  __NAMESPACE__.'\\'.__FUNCTION__.": $sum </br>";
-            return $sum;
+        $sum = 0;
+        foreach ($numbers as $number) {
+            $sum += $number;
         }
+        echo  __FUNCTION__.":". $sum ."</br>";
+        return $sum;
     }
+
 }

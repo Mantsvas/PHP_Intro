@@ -18,6 +18,9 @@
     "autoload": {
         "psr-4": {
             "Nfq\\": "src"
-        }
+        },
+        "files": [
+            "src/functions.php", "src/functions_strict.php"
+        ]
     }
 }
